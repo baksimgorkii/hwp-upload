@@ -3,14 +3,18 @@
 Plugin Name: hwp upload
 Plugin URI: http://gorkii.com/
 Description: allow hwp upload
-Version: 0.9
-Author: gorkii
+Version: 1.0
+Author: baksimgorkii
 Author URI: http://gorkii.com/
 License: GPL2
 */
 
-add_filter('upload_mimes', 'custom_upload_mimes');
-function custom_upload_mimes ( $existing_mimes=array() ) {
-$existing_mimes['hwp'] = 'application/hangul';
-return $existing_mimes;
+function add_custom_mime_types ( $mimes ) {
+	$mimes['hwp'] = 'application/hangul';
+	return $mimes;
 }
+add_filter('upload_mimes', 'add_custom_mime_types');
+
+/* wp-config.php
+define( 'ALLOW_UNFILTERED_UPLOADS', true );
+*/
