@@ -14,3 +14,5 @@ after activating this plugin, you have to input code below in wp-confing.php
 define( 'ALLOW_UNFILTERED_UPLOADS', true );
 
 more details : https://eastsocial.co.kr/archives/1497
+
+mime type : https://www.iana.org/assignments/media-types/media-types.xhtml
