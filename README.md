@@ -8,6 +8,8 @@ after activating this plugin, you have to input code below in wp-confing.php
 
 플러그인을 업로드하고 활성화 시킨 후에 wp-config.php에 아래의 코드를 넣어야 합니다.
 
+워드프레스 4.7 버전부터 바뀐 부분입니다.
+
 
 define( 'ALLOW_UNFILTERED_UPLOADS', true );
 
